@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body style="background-color: black;" >
+    
+<div id="main">
+    <img src="imgmain.jpg" height="370" width="500">    
+</div><br>
+<div id="aa" > 
+    <img src="img.jpg"  id="a1">    
+    <img src="imga.jpg"  id="a2">   
+    <img src="imgb.jpg"  id="a3">    
+    <img src="imgc.jpg"  id="a4">    
+</div>
+
+<script>
+
+let main = document.querySelector("img");
+// main.style.marginLeft = "700px"
+main.style.height="60vh"
+main.style.width="45%"
+main.style.objectFit="cover"
+main.style.borderRadius="50px"
+main.style.marginLeft="400px"
+
+
+let a1 = document.getElementById("a1");
+a1.style.height="40vh"
+a1.style.width="25%"
+a1.style.borderRadius="50px"
+a1.style.objectFit="cover"
+a1.addEventListener("click", () => {
+    main.src = a1.src;
+});
+
+
+let a2 = document.getElementById("a2");
+a2.style.height="40vh"
+a2.style.width="25%"
+a2.style.objectFit="cover"
+a2.style.borderRadius="50px"
+a2.addEventListener("click", () => {
+    main.src = a2.src;
+});
+
+
+let a3 = document.getElementById("a3");
+a3.style.height="40vh"
+a3.style.width="25%"
+a3.style.objectFit="cover"
+a3.style.borderRadius="50px"
+a3.addEventListener("click", () => {
+    main.src = a3.src;
+});
+
+
+let a4 = document.getElementById("a4");
+a4.style.height="40vh"
+a4.style.width="20%"
+a4.style.objectFit="cover"
+a4.style.borderRadius="50px"
+a4.addEventListener("click", () => {
+    main.src = a4.src;
+});
+</script>
+</body>
+</html>
